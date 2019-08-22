@@ -1,0 +1,112 @@
+// compileCompressed:../css/style.min.css
+
+@import "_mixin";
+@import "bootstrap/_variables";
+@import "bootstrap/_mixins";
+
+$blue: #00008c;
+$yellow: #fff212;
+
+.topbar{
+  height: 3.375rem;
+}
+
+.sidebar{
+  background: $blue;
+  color: $yellow !important;
+  .sidebar-brand{
+    color: inherit;
+  }
+  .nav-item.active .nav-link,.nav-item.active .nav-link i{
+    color: $yellow !important;
+  }
+  .nav-item .nav-link{
+    @include hover{
+      color: $yellow !important;
+      i{
+        color: $yellow !important;
+      }
+    }
+  }
+}
+div.wrapper{
+  margin-left: -30px;
+  margin-right: -30px;
+}
+.frontpage{
+  width: 100%;
+  height: 100vh;
+  padding: 30px 0;
+  background: url('../img/dinas_pu_bg.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  @include valign;
+  &:before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba($blue,.65);
+  }
+  &.usulan{
+    height: 100%;
+    &:before{
+      background: rgba(255,255,255,.85);
+    }
+    .card-body{
+      color: #333;
+    }
+    #suggesstion-box{
+      position: relative;
+      #jalan-list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        border: solid 1px #bbb;
+        z-index: 2;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 0 5px black;
+        li{
+          font-weight: bold;
+          padding: 10px 15px;
+          cursor: pointer;
+          @include hover{
+            background: rgba(0,0,0,.2);
+          }
+        }
+      }
+    }
+  }
+  .container{
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    color: $yellow;
+    .btn-usulan{
+      margin-top: 10px;
+      padding: 10px 75px;
+      border-radius: 30px;
+      color: #000;
+      font-weight: bold;
+    }
+  }
+}
+.label{
+  font-size: 0.7em;
+  padding: 3px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+.captcha img{
+  margin-bottom: 5px;
+}
+.nav-item{
+  .collapse{
+    z-index: 5 !important;
+  }
+}
