@@ -20,17 +20,6 @@
   <link href="{{ url('assets') }}/css/style.min.css" rel="stylesheet">
   <link href="{{ url('assets') }}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
   <link href="{{ url('assets') }}/vendor/fancybox/jquery.fancybox.min.css" rel="stylesheet">
-  <style media="screen">
-    label.control-label{
-      font-weight: bold;
-    }
-    .btn{
-      border-radius: 0;
-    }
-    .card-header{
-      font-weight: bold;
-    }
-  </style>
   @yield('head')
 
 </head>
@@ -82,25 +71,6 @@
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
-
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Yakin akan logout?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Pilih tombol "Logout" di bawah jika ingin mengakhiri sesi Anda!</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-          <a class="btn btn-primary" href="{{ route('main.logout') }}">Logout</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Bootstrap core JavaScript-->
   <script src="{{ url('assets') }}/vendor/jquery/jquery.min.js"></script>
