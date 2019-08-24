@@ -12,7 +12,10 @@ services:
     depends_on:
     -  php
   php:
-    image: php
+    image: php:latest
+    build:
+        context: .
+        dockerfile: Dockerfile
     restart: always
     container_name: php
     volumes:
