@@ -21,8 +21,8 @@
       html,body{
         width: 100%;
         margin: 15px;
-        /* font-size: 0.9em; */
-        font-family: Arial;
+        font-size: 0.9em;
+        font-family: DejaVu Sans;
       }
     </style>
   </head>
