@@ -14,6 +14,7 @@ class DrainaseDetail extends Model
     'bentuk',
     '1_n',
     'kemiringan',
+    'panjang_saluran',
     'dimensi_b',
     'dimensi_h',
     'tinggi_jagaan',

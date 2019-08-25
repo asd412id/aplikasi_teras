@@ -131,6 +131,12 @@
               </div>
             </div>
             <div class="row form-group">
+              <label for="" class="control-label col-sm-12">Panjang Saluran</label>
+              <div class="col-sm-12">
+                <input type="text" name="kiri[panjang_saluran]" class="form-control" value="{{ $kiri->panjang_saluran }}">
+              </div>
+            </div>
+            <div class="row form-group">
               <label for="" class="control-label col-sm-12">Dimensi Existing (b)</label>
               <div class="col-sm-12">
                 <div class="input-group">
@@ -309,6 +315,12 @@
                 <label for="" class="control-label col-sm-12">Kemiringan</label>
                 <div class="col-sm-12">
                   <input type="number" step="any" name="kanan[kemiringan]" class="form-control" value="{{ $kanan->kemiringan }}">
+                </div>
+              </div>
+              <div class="row form-group">
+                <label for="" class="control-label col-sm-12">Panjang Saluran</label>
+                <div class="col-sm-12">
+                  <input type="text" name="kanan[panjang_saluran]" class="form-control" value="{{ $kanan->panjang_saluran }}">
                 </div>
               </div>
               <div class="row form-group">

@@ -21,8 +21,8 @@
       html,body{
         width: 100%;
         margin: 15px;
-        font-size: 0.9em;
-        font-family: Arial;
+        font-size: 0.8em;
+        font-family: 'DejaVu sans';
       }
     </style>
   </head>
@@ -34,10 +34,11 @@
         <th rowspan="3">Nama Jalan</th>
         <th rowspan="3">STA</th>
         <th rowspan="3">Posisi</th>
-        <th rowspan="3" width="65">Jenis Saluran (P/S/T/K)</th>
+        <th rowspan="3" width="70">Jenis Saluran (P/S/T/K)</th>
         <th rowspan="3">Bentuk</th>
-        <th rowspan="3">1/n</th>
+        <th rowspan="3">1/&eta;</th>
         <th rowspan="3">Kemiringan</th>
+        <th rowspan="3">Panjang Saluran</th>
         <th colspan="2">Dimensi Existing</th>
         <th>Tinggi Jagaan (w)</th>
         <th>Tinggi Muka Air (y)</th>
@@ -87,6 +88,7 @@
         <td align="center">{{ ucwords($kiri->bentuk) }}</td>
         <td align="center">{{ $kiri['1_n'] }}</td>
         <td align="center">{{ $kiri->kemiringan }}</td>
+        <td align="center">{{ $kiri->panjang_saluran }}</td>
         <td align="center">{{ $kiri->dimensi_b }}</td>
         <td align="center">{{ $kiri->dimensi_h }}</td>
         <td align="center">{{ $kiri->tinggi_jagaan }}</td>
@@ -105,6 +107,7 @@
         <td align="center">{{ ucwords($kanan->bentuk) }}</td>
         <td align="center">{{ $kanan['1_n'] }}</td>
         <td align="center">{{ $kanan->kemiringan }}</td>
+        <td align="center">{{ $kanan->panjang_saluran }}</td>
         <td align="center">{{ $kanan->dimensi_b }}</td>
         <td align="center">{{ $kanan->dimensi_h }}</td>
         <td align="center">{{ $kanan->tinggi_jagaan }}</td>

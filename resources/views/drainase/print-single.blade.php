@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>{{ $title }}</title>
     <style media="screen">
+      html,body{
+        font-size: 0.91em;
+        font-family: 'DejaVu sans';
+      }
       .wrapper{
         width: 100%;
         margin-bottom: 10px;
@@ -67,7 +71,7 @@
           <td>{{ ucwords($kiri->bentuk) }}</td>
         </tr>
         <tr>
-          <th>1/n</th>
+          <th>1/&eta;</th>
           <th>:</th>
           <td>{{ $kiri['1_n'] }}</td>
         </tr>
@@ -75,6 +79,11 @@
           <th>Kemiringan</th>
           <th>:</th>
           <td>{{ $kiri->kemiringan }}</td>
+        </tr>
+        <tr>
+          <th>Panjang Saluran</th>
+          <th>:</th>
+          <td>{{ $kiri->panjang_saluran }}</td>
         </tr>
         <tr>
           <th>Dimensi Existing (b)</th>
@@ -157,6 +166,11 @@
           <th>Kemiringan</th>
           <th>:</th>
           <td>{{ $kanan->kemiringan }}</td>
+        </tr>
+        <tr>
+          <th>Panjang Saluran</th>
+          <th>:</th>
+          <td>{{ $kanan->panjang_saluran }}</td>
         </tr>
         <tr>
           <th>Dimensi Existing (b)</th>
