@@ -59,7 +59,7 @@
         <th>P</th>
         <th>R</th>
         <th>V</th>
-        <th>Q)</th>
+        <th>Q</th>
         <th>Q'</th>
       </tr>
       <tr>
