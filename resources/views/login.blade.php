@@ -18,6 +18,7 @@
 
   <!-- Custom styles for this template-->
   <link href="{{ url('assets') }}/css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="{{ url('assets') }}/css/style.min.css" rel="stylesheet">
 
 </head>
 
