@@ -31,7 +31,7 @@
     serverSide: true,
     ajax: "{{ route('proyek.index',['tahun'=>request()->tahun]) }}",
     columns: [
-      {data: 'DT_RowIndex', name: 'DT_RowIndex'},
+      {data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false},
       {data: 'nama_ruas', name: 'nama_ruas'},
       {data: 'panjang', name: 'panjang'},
       {data: 'jp', name: 'jp'},

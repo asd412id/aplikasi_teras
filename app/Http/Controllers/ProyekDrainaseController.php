@@ -23,7 +23,7 @@ class ProyekDrainaseController extends BaseController
   {
 
     if (request()->ajax()) {
-      $data = DrainaseProyek::latest()->get();
+      $data = DrainaseProyek::latest();
       return DataTables::of($data)
       ->addIndexColumn()
       ->addColumn('jp',function($row){

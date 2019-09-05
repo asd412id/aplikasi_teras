@@ -36,7 +36,7 @@
     serverSide: true,
     ajax: "{{ route('usulan.index') }}",
     columns: [
-      {data: 'DT_RowIndex', name: 'DT_RowIndex'},
+      {data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false},
       {data: 'nama_pengusul', name: 'nama_pengusul'},
       {data: 'telp', name: 'telp'},
       {data: 'nama_jalan', name: 'nama_jalan'},

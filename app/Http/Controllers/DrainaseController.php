@@ -25,7 +25,7 @@ class DrainaseController extends BaseController
   {
 
     if (request()->ajax()) {
-      $data = Drainase::latest()->get();
+      $data = Drainase::latest();
       return DataTables::of($data)
       ->addIndexColumn()
       ->addColumn('tgl',function($row){

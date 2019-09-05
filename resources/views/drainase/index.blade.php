@@ -35,7 +35,7 @@
     serverSide: true,
     ajax: "{{ route('drainase.index') }}",
     columns: [
-      {data: 'DT_RowIndex', name: 'DT_RowIndex'},
+      {data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false},
       {data: 'nama_jalan', name: 'nama_jalan'},
       {data: 'sta', name: 'sta'},
       {data: 'tgl', name: 'tgl'},

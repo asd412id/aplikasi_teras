@@ -23,7 +23,7 @@ class UsulanController extends BaseController
   {
 
     if (request()->ajax()) {
-      $data = DrainaseUsulan::latest()->get();
+      $data = DrainaseUsulan::latest();
       return DataTables::of($data)
       ->addIndexColumn()
       ->addColumn('tgl',function($row){

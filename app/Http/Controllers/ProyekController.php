@@ -20,9 +20,9 @@ class ProyekController extends BaseController
   {
     if (request()->ajax()) {
       if ($r->tahun!='all') {
-        $data = DrainaseProyek::whereYear('tanggal',$r->tahun)->orderBy('tanggal','desc')->get();
+        $data = DrainaseProyek::whereYear('tanggal',$r->tahun);
       }else{
-        $data = DrainaseProyek::orderBy('tanggal','desc')->get();
+        $data = DrainaseProyek::latest();
       }
       return DataTables::of($data)
       ->addIndexColumn()
