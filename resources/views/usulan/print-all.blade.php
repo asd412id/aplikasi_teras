@@ -10,6 +10,9 @@
         border-spacing: 0;
         border-collapse: collapse;
       }
+      tr{
+        page-break-inside: avoid !important;
+      }
       th,td{
         padding: 3px 7px;
         border: solid 1px #000 !important;
