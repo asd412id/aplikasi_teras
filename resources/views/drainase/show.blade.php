@@ -61,6 +61,11 @@
               <td>{{ $kiri->kemiringan }}</td>
             </tr>
             <tr>
+              <th>Panjang Saluran</th>
+              <th>:</th>
+              <td>{{ $kiri->panjang_saluran }}</td>
+            </tr>
+            <tr>
               <th>Dimensi Existing (b)</th>
               <th>:</th>
               <td>{{ $kiri->dimensi_b }} m</td>
@@ -143,6 +148,11 @@
               <th>Kemiringan</th>
               <th>:</th>
               <td>{{ $kanan->kemiringan }}</td>
+            </tr>
+            <tr>
+              <th>Panjang Saluran</th>
+              <th>:</th>
+              <td>{{ $kanan->panjang_saluran }}</td>
             </tr>
             <tr>
               <th>Dimensi Existing (b)</th>
